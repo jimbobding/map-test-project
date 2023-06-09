@@ -97,7 +97,7 @@ const Map = ({ weight, dropdown, name }: MapProps) => {
                 },
               }}
             />
-          )}{" "}
+          )}
           {office && (
             <>
               <Marker
@@ -123,9 +123,9 @@ const Map = ({ weight, dropdown, name }: MapProps) => {
               <Circle center={office} radius={30000} options={middleOptions} />
               <Circle center={office} radius={45000} options={farOptions} />
             </>
-          )}{" "}
+          )}
+          <p>Weight: {weight}</p>
         </GoogleMap>
-        <p>Weight: {weight}</p>
       </div>
     </div>
   );
