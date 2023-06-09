@@ -7,7 +7,7 @@ import {
   faPersonWalking,
 } from "@fortawesome/free-solid-svg-icons";
 
-import Map from "./Map";
+import MapContainer from "./MapContainer";
 
 const Form: React.FC = () => {
   const [weight, setWeight] = useState<string>("");
@@ -113,7 +113,7 @@ const Form: React.FC = () => {
         </div>
       </div>
 
-      <Map weight={weight} dropdown={dropdown} name={name} />
+      <MapContainer weight={weight} dropdown={dropdown} name={name} />
     </>
   );
 };
